@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>C++ Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li>
+            <a class="nav-link" href="#Why_to_learn_C++"
+              >Why to learn C++</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#Hello_World_using_C++">Hello World using C++</a>
+          </li>
+          <li><a class="nav-link" href="#Application_Of_C++_Programming">Application Of C++ Programming</a></li>
+          <li><a class="nav-link" href="#Prerequisites">Prerequisites</a></li>
+          <li>
+            <a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a>
+          </li>
+          <li><a class="nav-link" href="#Standard_Libraries">Standard Libraries</a></li>
+          <li><a class="nav-link" href="#C++_Program_Structure">C++ Program Structure</a></li>
+          <li><a class="nav-link" href="#Semicolons_and_Blocks_in_C++">Semicolons and Blocks in C++</a></li>
+          <li><a class="nav-link" href="#C++_Identifiers">C++ Identifiers</a></li>
+          <li>
+            <a class="nav-link" href="#C++_Keywords">C++ Keywords</a>
+          </li>
+          <li><a class="nav-link" href="#Whitespace_in_C++">Whitespace in C++</a></li>
+          <li>
+            <a class="nav-link" href="#Comments_in_C++"
+              >Comments in C++</a
+            >
+          </li>
+          <li><a class="nav-link" href="#C++_Data_Types">C++ Data Types</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p><b>C++</b> is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs. 
+                <b>C++</b> runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. 
+                This <b>C++</b> tutorial adopts a simple and practical approach to describe the concepts of 
+                <b>C++</b> for beginners to advanded software engineers.
+            </p>
+            <ul class="list">
+                <li>
+                    <p>C++ is a statically typed, compiled, general-purpose, case-sensitive, 
+                    free-form programming language that supports procedural, object-oriented, and generic programming.</p>
+                </li>
+                <li>
+                    <p>C++ is regarded as a <b>middle-level</b> language, 
+                        as it comprises a combination of both high-level and low-level language features.</p>
+                </li>
+                <li>
+                    <p>C++ was developed by Bjarne Stroustrup starting in 1979 at Bell Labs in Murray Hill, 
+                        New Jersey, as an enhancement to the C language and originally named C with Classes but later it was renamed C++ in 1983.</p>
+                </li>
+                <li>
+                    <p>C++ is a superset of C, and that virtually any legal C program is a legal C++ program.</p>
+                </li>
+                <li>
+                    <p><b>Note</b> − A programming language is said to use s
+                        tatic typing when type checking is performed during compile-time as opposed to run-time.</p>
+                </li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Why_to_learn_C++">
+          <header>Why to learn C++</header>
+          <article>
+            <p><b>C++</b> is a MUST for students and working professionals to become a great 
+                Software Engineer. 
+                I will list down some of the key advantages of learning C++:</p>
+                <ul class="list">
+                    <li><p>C++ is very close to hardware, so you get a chance to work at a low level which gives you lot of control in terms of memory management, better performance and finally a robust software development.</p></li>
+                    <li><p><b>C++ programming</b> gives you a clear understanding about Object Oriented Programming. You will understand low level implementation of polymorphism when you will implement virtual tables and virtual table pointers, or dynamic type identification.</p></li>
+                    <li><p>C++ is one of the every green programming languages and loved by  millions of software developers. If you are a great C++ programmer then you will never sit without work and more importantly you will get highly paid for your work.</p></li>
+                    <li><p>C++ is the most widely used programming languages in application and system programming. So you can choose your area of interest of software development.</p></li>
+                    <li><p>C++ really teaches you the difference between compiler, linker and loader, different data types, storage classes, variable types their scopes etc.</p></li>
+                    </ul>
+                    <p>There are 1000s of good reasons to learn C++ Programming. But one thing for sure, to learn any programming language, not only C++, you just need to code, 
+                        and code and finally code until you become expert.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Hello_World_using_C++">
+          <header>Hello World using C++</header>
+          <article>
+            <p>Just to give you a little excitement about <b>C++ programming</b>, 
+                I'm going to give you a 
+                small conventional C++ Hello World program, 
+                You can try it using Demo link</p>
+                <p>C++ is a super set of C programming with additional implementation of object-oriented concepts.</p>
+                <code>
+                    #include <iostream>
+                        <br>
+                        using namespace std;
+                        <br>
+                        
+                        // main() is where program execution begins.
+                        <br>
+                        int main() {
+                            <br>
+                           cout << "Hello World"; // prints Hello World
+                        <br>
+                           return 0;
+                           <br>
+                        }
+                </code>
+                <p>Select the code in the pad and paste it into compiler and hit the run button</p>
+                <p>There are many C++ compilers available which you can use to compile and run above mentioned program:</p>
+                <ul class="list">
+                    <li><p>Apple C++. Xcode</p></li>
+                    <li><p>Bloodshed Dev-C++</p></li>
+                    <li><p>Clang C++</p></li>
+                    <li><p>Cygwin (GNU C++)</p></li>
+                    <li><p>Mentor Graphics</p></li>
+                    <li><p>MINGW - "Minimalist GNU for Windows"</p></li>
+                    <li><p>GNU CC source</p></li>
+                    <li><p>IBM C++</p></li>
+                    <li><p>Intel C++</p></li>
+                    <li><p>Microsoft Visual C++</p></li>
+                    <li><p>Oracle C++</p></li>
+                    <li><p>HP C++</p></li>
+                    </ul>
+                    <p>It is really impossible to give a complete list of all the available compilers. 
+                        The C++ world is just too large and too much new is happening.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Application_Of_C++_Programming">
+          <header>Application Of C++ Programming</header>
+          <article>
+            <p>As mentioned before, C++ is one of the most widely used programming languages. It has it's presence in almost every area of software development. 
+                I'm going to list few of them here:</p>
+                <ul class="list">
+                    <li><p><b>Application Software Development</b> - C++ programming has been used in developing almost all the major Operating Systems like Windows, Mac OSX and Linux. Apart from the operating systems,  the core part of many browsers like Mozilla Firefox and Chrome have been written using C++. C++ also has been used in developing the most popular database system called MySQL.</p></li>
+                    <li><p><b>Programming Languages Development</b> - C++ has been used extensively in developing new programming languages like C#, Java, JavaScript, Perl, UNIX’s C Shell, PHP and Python, and Verilog etc.</p></li>
+                    <li><p><b>Computation Programming</b> - C++ is the best friends of scientists because of fast speed and computational efficiencies.</p></li>
+                    <li><p><b>Games Development</b> - C++ is extremely fast which allows programmers to do procedural programming for CPU intensive functions and provides greater control over hardware, because of which it has been widely used in development of gaming engines.</p></li>
+                    <li><p><b>Embedded System </b> - C++ is being heavily used in developing Medical and Engineering Applications like softwares for MRI machines, high-end CAD/CAM systems etc.</p></li>
+                    </ul>
+                    <p>This list goes on, there are various areas where software developers are happily using C++ to provide great softwares. I highly 
+                        recommend you to learn C++ and contribute great softwares to the community.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Prerequisites">
+          <header>Prerequisites</header>
+          <article>
+            <p>Before you start practicing with various types of examples given in this C++ tutorial,we are making an assumption that you are already 
+                aware of the basics of computer program and computer programming language.</p>
+         </article>
+        </section>
+        <section class="main-section" id="Object_Oriented_Programming">
+          <header>Object Oriented Programming</header>
+          <article>
+            <p>C++ fully supports object-oriented programming, including the four pillars of object-oriented development −</p>
+                <ul class="list">
+                      <li>Encapsulation</li>
+                      <li>Data hiding</li>
+                      <li>Inheritance</li>
+                      <li>Polymorphism</li>
+                </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Standard_Libraries">
+          <header>Standard Libraries</header>
+          <article>
+            <p>Standard C++ consists of three important parts −</p>
+                  <ul class="list">
+                      <li><p>The core language giving all the building blocks including variables, data types and literals, etc.</p></li>
+                      <li><p>The C++ Standard Library giving a rich set of functions manipulating files, strings, etc.</p></li>
+                      <li><p>The Standard Template Library (STL) giving a rich set of methods manipulating data structures, etc.</p></li>
+                    </ul>
+          </article>
+        </section>
+        <section class="main-section" id="C++_Program_Structure">
+          <header>C++ Program Structure</header>
+          <article>
+            <p>Let us look at a simple code that would print the words <i>Hello World</i>.</p>
+                  <code>
+                      #include <iostream>
+                          <br>
+                          using namespace std;
+                          <br>
+                          
+                          // main() is where program execution begins.
+                          <br>
+                          int main() {
+                              <br>
+                             cout << "Hello World"; // prints Hello World
+                             <br>
+                             return 0;
+                             <br>
+                          }
+                  </code>
+                  <p>Let us look at the various parts of the above program −</p>
+                  <ul class="list">
+                      <li><p>The C++ language defines several headers, which contain information that is either necessary or useful to your program. For this program, the header <b>&lt;iostream&gt;</b> is needed.</p></li>
+                      <li><p>The line <b>using namespace std;</b> tells the compiler to use the std namespace. Namespaces are a relatively recent addition to C++.</p></li>
+                      <li><p>The next line '<b>// main() is where program execution begins.</b>' is a single-line comment available in C++. Single-line comments begin with // and stop at the end of the line.</p></li>
+                      <li><p>The line <b>int main()</b> is the main function where program execution begins.</p></li>
+                      <li><p>The next line <b>cout &lt;&lt; "Hello World";</b> causes the message "Hello World" to be displayed on the screen.</p></li>
+                      <li><p>The next line <b>return 0;</b> terminates main( )function and causes it to return the value 0 to the calling process.</p></li>
+                      </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Semicolons_and_Blocks_in_C++">
+          <header>Semicolons and Blocks in C++</header>
+          <article>
+            <p>
+              You can create a read-only, named constant with the const keyword. The
+              syntax of a constant identifier is the same as for a variable
+              identifier: it must start with a letter, underscore or dollar sign and
+              can contain alphabetic, numeric, or underscore characters.
+            </p>
+      
+            <code>const PI = 3.14;</code>
+            <p>
+              A constant cannot change value through assignment or be re-declared
+              while the script is running. It has to be initialized to a value.
+            </p>
+      
+            <p>
+              The scope rules for constants are the same as those for let block scope
+              variables. If the const keyword is omitted, the identifier is assumed to
+              represent a variable.
+            </p>
+      
+            <p>
+              You cannot declare a constant with the same name as a function or
+              variable in the same scope. For example:
+            </p>
+      
+            <code
+              >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+              CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+              }</code
+            >
+            However, object attributes are not protected, so the following statement
+            is executed without problems.
+            <code
+              >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code
+            >
+          </article>
+        </section>
+        <section class="main-section" id="C++_Identifiers">
+          <header>C++ Identifiers</header>
+          <article>
+            <p>A C++ identifier is a name used to identify a variable, function, class, module, or any other user-defined item. An identifier 
+                      starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores, and digits (0 to 9).</p>
+                      <p>C++ does not allow punctuation characters such as @, $, and % within identifiers. C++ is a case-sensitive programming language.  
+                          Thus, <b>Manpower</b> and <b>manpower</b> are two different identifiers in C++.</p>
+                          <p>Here are some examples of acceptable identifiers −</p>
+                          <pre class="result notranslate">mohd       zara    abc   move_name  a_123
+                              myname50   _temp   j     a23b9      retVal
+                              </pre>
+          </article>
+        </section>
+        <section class="main-section" id="C++_Keywords">
+          <header>C++ Keywords</header>
+          <article>
+            <p>The following list shows the reserved words in C++. 
+                These reserved words may not be used as constant or 
+                variable or any other identifier names.</p>
+                <table class="table table-bordered" style="text-align:center;">
+                    <tbody><tr>
+                    <td>asm</td>
+                    <td>else</td>
+                    <td>new</td>
+                    <td>this</td>
+                    </tr>
+                    <tr>
+                    <td>auto</td>
+                    <td>enum</td>
+                    <td>operator</td>
+                    <td>throw</td>
+                    </tr>
+                    <tr>
+                    <td>bool</td>
+                    <td>explicit</td>
+                    <td>private</td>
+                    <td>true</td>
+                    </tr>
+                    <tr>
+                    <td>break</td>
+                    <td>export</td>
+                    <td>protected</td>
+                    <td>try</td>
+                    </tr>
+                    <tr>
+                    <td>case</td>
+                    <td>extern</td>
+                    <td>public</td>
+                    <td>typedef</td>
+                    </tr>
+                    <tr>
+                    <td>catch</td>
+                    <td>false</td>
+                    <td>register</td>
+                    <td>typeid</td>
+                    </tr>
+                    <tr>
+                    <td>char</td>
+                    <td>float</td>
+                    <td>reinterpret_cast</td>
+                    <td>typename</td>
+                    </tr>
+                    <tr>
+                    <td>class</td>
+                    <td>for</td>
+                    <td>return</td>
+                    <td>union</td>
+                    </tr>
+                    <tr>
+                    <td>const</td>
+                    <td>friend</td>
+                    <td>short</td>
+                    <td>unsigned</td>
+                    </tr>
+                    <tr>
+                    <td>const_cast</td>
+                    <td>goto</td>
+                    <td>signed</td>
+                    <td>using</td>
+                    </tr>
+                    <tr>
+                    <td>continue</td>
+                    <td>if</td>
+                    <td>sizeof</td>
+                    <td>virtual</td>
+                    </tr>
+                    <tr>
+                    <td>default</td>
+                    <td>inline</td>
+                    <td>static</td>
+                    <td>void</td>
+                    </tr>
+                    <tr>
+                    <td>delete</td>
+                    <td>int</td>
+                    <td>static_cast</td>
+                    <td>volatile</td>
+                    </tr>
+                    <tr>
+                    <td>do</td>
+                    <td>long</td>
+                    <td>struct</td>
+                    <td>wchar_t</td>
+                    </tr>
+                    <tr>
+                    <td>double</td>
+                    <td>mutable</td>
+                    <td>switch</td>
+                    <td>while</td>
+                    </tr>
+                    <tr>
+                    <td>dynamic_cast</td>
+                    <td>namespace</td>
+                    <td>template</td>
+                    <td>&nbsp;</td>
+                    </tr>
+                    </tbody></table>
+        </section>
+        <section class="main-section" id="Whitespace_in_C++">
+          <header>Whitespace in C++</header>
+          <article>
+            <p>A line containing only whitespace, possibly with a comment, is known as a blank line, and C++ compiler totally ignores it.</p>
+            <p>Whitespace is the term used in C++ to describe blanks, tabs, newline characters and comments. 
+                Whitespace separates one part 
+                of a statement from another and enables the compiler to identify 
+                where one element in a statement, such as int, ends and the next element begins.</p>
+                <h3>Statement 1</h3>
+                <code>int age;</code>
+                <p>In the above statement there must be at least one 
+                    whitespace character (usually a space) between int and age for the compiler to be able to distinguish them.</p>
+                <h3>Statement 2</h3>
+                <code>fruit = apples + oranges;   // Get the total fruit</code>
+                <p>In the above statement 2, no whitespace characters are necessary between 
+                    fruit and =, or between = and apples, although 
+                    you are free to include some if you wish for readability purpose.</p> 
+          </article>
+        </section>
+        <section class="main-section" id="Comments_in_C++">
+          <header>Comments in C++</header>
+          <article>
+            <p>Program comments are explanatory statements that you can include in the C++ code. 
+                These comments help anyone reading the source code. All programming languages allow for some form of comments.</p>
+                <p>C++ supports single-line and multi-line comments. All characters available inside any comment are ignored by C++ compiler.</p>
+                <p>C++ comments start with /* and end with */. For example −</p>
+                <code>/* This is a comment */
+                    <br>
+
+                    /* C++ comments can also
+                    <br>
+                       * span multiple lines
+                       <br>
+                    */</code>
+                    <p>A comment can also start with //, extending to the end of the line. For example −</p>
+                    <code>#include <iostream>
+                        <br>
+                        using namespace std;
+                        <br>
+                        
+                        main() {
+                            <br>
+                           cout << "Hello World"; // prints Hello World
+                           <br>
+                           
+                           return 0;
+                           <br>
+                        }</code>
+                        <p>When the above code is compiled, it will ignore // prints Hello World and final executable will produce the following result −</p>
+          </article>
+        </section>
+        <section class="main-section" id="C++_Data_Types">
+          <header>C++ Data Types</header>
+          <article>
+            <p>While writing program in any language, you need to use various variables to store 
+                various information. Variables are nothing but reserved memory locations to store values. 
+                This means that when you create a variable you reserve some space in memory.</p>
+                <p>You may like to store information of various data types like character, wide character, integer, floating point, double floating point, 
+                    boolean etc. Based on the data type of a variable, 
+                    the operating system allocates memory and decides
+                     what can be stored in the reserved memory.</p>
+                     <h2>Primitive Built-in Types</h2>
+                     <p>C++ offers the programmer a rich assortment of built-in as well as 
+                         user defined data types. Following table lists down seven basic C++ data types −</p>
+                         <table class="table table-bordered" style="text-align:center;">
+                            <tbody><tr>
+                            <th width="50%" style="text-align:center;">Type</th>
+                            <th style="text-align:center;">Keyword</th>
+                            </tr>
+                            <tr>
+                            <td>Boolean</td>
+                            <td>bool</td>
+                            </tr>
+                            <tr>
+                            <td>Character</td>
+                            <td>char</td>
+                            </tr>
+                            <tr>
+                            <td>Integer</td>
+                            <td>int</td>
+                            </tr>
+                            <tr>
+                            <td>Floating point</td>
+                            <td>float</td>
+                            </tr>
+                            <tr>
+                            <td>Double floating point</td>
+                            <td>double</td>
+                            </tr>
+                            <tr>
+                            <td>Valueless</td>
+                            <td>void</td>
+                            </tr>
+                            <tr>
+                            <td>Wide character</td>
+                            <td>wchar_t</td>
+                            </tr>
+                            </tbody></table>
+                            <p>Several of the basic types can be modified using one or more of these type modifiers −</p>
+                            <ul class="list">
+                                <li>signed</li>
+                                <li>unsigned</li>
+                                <li>short</li>
+                                <li>long</li>
+                                </ul>
+                                <p>The following table shows the variable type, how much memory 
+                                    it takes to store the value in memory, and what is
+                                     maximum and minimum value which can be stored in such type of variables.</p>
+                                     <table class="table table-bordered" style="text-align:center;">
+                                        <tbody><tr>
+                                        <th style="text-align:center;">Type</th>
+                                        <th style="text-align:center;">Typical Bit Width</th>
+                                        <th style="text-align:center;">Typical Range</th>
+                                        </tr>
+                                        <tr>
+                                        <td>char</td>
+                                        <td>1byte</td>
+                                        <td>-127 to 127 or 0 to 255</td>
+                                        </tr>
+                                        <tr>
+                                        <td>unsigned char</td>
+                                        <td>1byte</td>
+                                        <td>0 to 255</td>
+                                        </tr>
+                                        <tr>
+                                        <td>signed char</td>
+                                        <td>1byte</td>
+                                        <td>-127 to 127</td>
+                                        </tr>
+                                        <tr>
+                                        <td>int</td>
+                                        <td>4bytes</td>
+                                        <td>-2147483648 to 2147483647</td>
+                                        </tr>
+                                        <tr>
+                                        <td>unsigned int</td>
+                                        <td>4bytes</td>
+                                        <td>0 to 4294967295</td>
+                                        </tr>
+                                        <tr>
+                                        <td>signed int</td>
+                                        <td>4bytes</td>
+                                        <td>-2147483648 to 2147483647</td>
+                                        </tr>
+                                        <tr>
+                                        <td>short int</td>
+                                        <td>2bytes</td>
+                                        <td>-32768 to 32767</td>
+                                        </tr>
+                                        <tr>
+                                        <td>unsigned short int</td>
+                                        <td>2bytes</td>
+                                        <td>0 to 65,535</td>
+                                        </tr>
+                                        <tr>
+                                        <td>signed short int</td>
+                                        <td>2bytes</td>
+                                        <td>-32768 to 32767</td>
+                                        </tr>
+                                        <tr>
+                                        <td>long int</td>
+                                        <td>8bytes</td>
+                                        <td>-2,147,483,648 to 2,147,483,647</td>
+                                        </tr>
+                                        <tr>
+                                        <td>signed long int</td>
+                                        <td>8bytes</td>
+                                        <td>same as long int</td>
+                                        </tr>
+                                        <tr>
+                                        <td>unsigned long int</td>
+                                        <td>8bytes</td>
+                                        <td>0 to 4,294,967,295</td>
+                                        </tr>
+                                        <tr>
+                                        <td>long long int</td>
+                                        <td>8bytes</td>
+                                        <td>-(2^63) to (2^63)-1</td>
+                                        </tr>
+                                        <tr>
+                                        <td>unsigned long long int</td>
+                                        <td>8bytes</td>
+                                        <td>0 to 18,446,744,073,709,551,615</td>
+                                        </tr>
+                                        <tr>
+                                        <td>float</td>
+                                        <td>4bytes</td>
+                                        <td></td>
+                                        </tr>
+                                        <tr>
+                                        <td>double</td>
+                                        <td>8bytes</td>
+                                        <td></td>
+                                        </tr>
+                                        <tr>
+                                        <td>long double</td>
+                                        <td>12bytes</td>
+                                        <td></td>
+                                        </tr>
+                                        <tr>
+                                        <td>wchar_t</td>
+                                        <td>2 or 4 bytes</td>
+                                        <td>1 wide character</td>
+                                        </tr>
+                                        </tbody></table>
+                                        <p>The size of variables might be different 
+                                        from those shown in the above table, depending on the compiler and the computer you are using.</p>
+                                        <p>Following is the example, which will produce correct size of various data types on your computer.</p>
+                                        <code>#include <iostream>
+                                            <br>
+                                            using namespace std;
+                                            <br>
+                                            
+                                            int main() {
+                                                <br>
+                                               cout << "Size of char : " << sizeof(char) << endl;<br>
+                                               cout << "Size of int : " << sizeof(int) << endl;<br>
+                                               cout << "Size of short int : " << sizeof(short int) << endl;<br>
+                                               cout << "Size of long int : " << sizeof(long int) << endl;<br>
+                                               cout << "Size of float : " << sizeof(float) << endl;<br>
+                                               cout << "Size of double : " << sizeof(double) << endl;<br>
+                                               cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;<br>
+                                               
+                                               return 0;<br>
+                                            }</code>
+                                            <p>This example uses  <b>endl</b>, which inserts a new-line character after every line and &lt;&lt; operator is being 
+                                                used to pass multiple values out to the screen. We are also using <b>sizeof()</b> operator to get size of various data types.</p>
+                                                <p>When the above code is compiled and executed, it produces the following result which can vary from machine to machine −</p>
+                                                <pre class="result notranslate">Size of char : 1
+                                                    Size of int : 4
+                                                    Size of short int : 2
+                                                    Size of long int : 4
+                                                    Size of float : 4
+                                                    Size of double : 8
+                                                    Size of wchar_t : 4
+                                                    </pre>
+          </article>
+        </section>
+   
+      </main>
+</body>
+</html>
